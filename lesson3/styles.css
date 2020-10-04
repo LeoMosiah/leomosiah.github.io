@@ -1,0 +1,128 @@
+:root {
+    --color-primary: #0A1FA8;
+    --color-secondary: #435EC2;
+    --color-primary-light: #A3B0D7;
+    --color-secondary-light: #E9EBF5;
+    --shadow: rgba(0, 0, 0, 0.25);
+
+}
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c7c7;
+}
+
+body{
+    margin: 10px 40px;
+    box-shadow: var(--shadow) .5em .5em;
+    border-radius: 2em;
+}
+
+header,
+footer {
+    background-color: var(--color-primary-light);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    color: var(--color-primary);
+}
+
+nav > ul {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+header {
+    width: auto;
+    font-family: 'Lobster', cursive;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+h1 {
+    line-height: 3em;
+    display: inline-block;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+header img {
+    height: 180px;
+    width: 180px;
+}
+
+.colorScheme {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: white;
+    min-height: 30vh;
+    padding: 1.5em 2em;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+main h2 {
+    margin: 0;
+    color: var(--color-primary);
+    font-size: 2.441em;
+    line-height: 3em;
+    font-weight: 900;
+}
+
+main hr {
+    background-color: var(--color-primary);
+    height: .5em;
+    border-radius: .5em;
+}
+
+main p,
+main ul {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+main ul li a {
+    color: var(--color-primary);
+    padding-left: .25em;
+}
+
+main ul li a:hover {
+    color: var(--color-secondary);
+    padding-left: .25em;
+}
+
+
+footer {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    color: white;
+}
+
+footer a {
+    color: var(--color-secondary);
+}
+footer a:hover {
+    color: white;
+}
