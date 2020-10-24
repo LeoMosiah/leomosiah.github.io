@@ -24,12 +24,13 @@
 <header>
     <img src="iconfinder_weather.png" alt="Don't Rain on My Parade Logo">
     <div>
-        <h3>Don't Rain On My Parade</h3>
+        <h1>Don't Rain On My Parade</h1>
         <span>You are never off guard</span>
         <span class="catchPhrase">/ Some Nice Catch Phrase</span>
     </div>
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
     <label for="navi-toggle" class="navigation__button">
+        Menu
         <span class="navigation__icon">&nbsp;</span>
     </label>
 </header>
@@ -58,12 +59,17 @@
     </nav>
     <h2>Preston Idaho</h2>
     <div class="heroImageWrapper">
-        <img class="heroImage" src="images/john-noonan-unsplash.jpg" alt="Rainy Day">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./images/hero-large.jpg">
+            <source media="(min-width: 768px)" srcset="./images/hero-medium.jpg">
+            <img class="heroImage" src="./images/hero-small.jpg" alt="Rainy Day">
+        </picture>
         <section>
             <h4>Weather Summary</h4>
-            <p>Temperature: 97℉</p>
-            <p>Wind speed: 14 MPH</p>
-            <p>Precipitation: 61%</p>
+            <p>Temperature: <span id="temperature">97</span>℉</p>
+            <p>Wind speed: <span id="windSpeed">14</span> MPH</p>
+            <p>Wind Chill: <span id="windchill">N/A</span></p>
+            <p>Precipitation: <span>61</span>%</p>
             <p>Traffic: Mild. Average delay of 20 - 30 minutes.</p>
         </section>
     </div>
@@ -88,9 +94,12 @@
         <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
     </div>
     <div class="map">
-        <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe width="300px" height="80px" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="./js/fontLoader.js"></script>
+<script src="./js/windchill.js"></script>
 </body>
 
 </html>
