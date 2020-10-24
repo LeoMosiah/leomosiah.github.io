@@ -13,7 +13,7 @@ header > img {
 }
 
 @media (min-width: 768px) {
-    h3 {
+    h1 {
         font-size: 42px;
     }
 

@@ -109,11 +109,18 @@ main {
     height: auto;
 }
 
-h2 {
-    font-family: 'Great Vibes',serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sansita Swashed", cursive;
+}
+
+h1 {
     font-size: 38px;
     color: #0A1FA8;
     padding: 4px;
+}
+
+h2 {
+    color: #0A1FA8;
 }
 
 .heroImage {
