@@ -1,9 +1,13 @@
 body {
-    max-width: 400px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
     text-align: center;
+}
+
+.lazyLoadGallery {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
@@ -20,3 +24,44 @@ img {
     -o-transition: filter 1.5s;
     -webkit-filter: blur(0em);
 }
+
+main {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.imageCard {
+    background-color: white;
+    text-align: left;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.imageCard > p {
+    margin: 2px 4px;
+    font-size: 24px;
+}
+
+.imageCard > picture > img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .imageCard:hover {
+        box-shadow: 0 0 10px #333;
+    }
+}
+
