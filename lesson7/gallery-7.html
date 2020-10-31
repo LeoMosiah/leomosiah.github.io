@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Lazy Loading Demo for  WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="styles.css">
+    <script src="../lastUpdate.js"></script>
     <title>Weather Gallery</title>
 </head>
-<body>
+<body onload="lastUpdate()">
     <header>
         <h1>Weather Gallery</h1>
     </header>
@@ -49,6 +50,10 @@
             <p>Morning walk in the rain</p>
         </div>
     </main>
+    <footer>
+        <p>&copy; <span id="year">2020</span> | Leonardo Mosiah Janes de Souza | Brazil | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
+    </footer>
 <script src="app.js" defer></script>
 </body>
 </html>

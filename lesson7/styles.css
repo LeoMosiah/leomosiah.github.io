@@ -65,3 +65,20 @@ main {
     }
 }
 
+footer {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    color: #000080;
+}
+
+footer a {
+    color: #435EC2;
+}
+footer a:hover {
+    color: lightblue;
+}
