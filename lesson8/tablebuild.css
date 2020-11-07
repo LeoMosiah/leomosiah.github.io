@@ -27,6 +27,7 @@ caption {
 }
 
 table {
+    margin: 0 auto;
     font-size: 1.5em;
     border-spacing: 0;
     box-shadow: 5px 5px 15px 5px var(--primary-color);
