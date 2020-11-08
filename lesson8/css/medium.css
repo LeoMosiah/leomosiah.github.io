@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #A3B0D7;
+    padding: 4px;
+    height: 90px;
+}
+
+header > img {
+    height: 80px;
+    width: 80px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    .catchPhrase {
+        display: inline;
+    }
+    .navigation__button {
+        display: none;
+    }
+    .menuClose {
+        display: block;
+    }
+    nav {
+        background: #0A1FA8;
+    }
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    nav ul li {
+        padding: 8px;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background: #A3B0D7;
+    }
+    .selected {
+        background: #A3B0D7;
+    }
+    h2 {
+        font-size: 58px;
+    }
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .heroImageWrapper {
+        position: relative;
+    }
+    .heroImageWrapper > section {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    section > div {
+        display: flex;
+    }
+    .articleImage {
+        width: 40%;
+        height: 90px;
+        margin-top: -20px;
+    }
+
+    .map {
+        width: 45%;
+    }
+    form {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    #stormSeverityValue {
+        top: 0;
+        font-size: 14px;
+    }
+}
+
+

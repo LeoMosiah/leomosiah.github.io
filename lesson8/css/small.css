@@ -115,14 +115,11 @@ h1 {
 
 h2 {
     color: #0A1FA8;
-}
-
-.heroImage {
-    width: 100%;
+    text-align: center;
 }
 
 section {
-    text-align: left;
+    text-align: center;
     background-color: white;
     border-radius: 4px;
     margin: 8px;
@@ -133,13 +130,6 @@ section {
     color: #0A1FA8;
 }
 
-.articleImage {
-    width: 100%;
-    height: 80px;
-    background: orangered;
-    text-align: center;
-    margin-top: 4px;
-}
 
 footer {
     display: flex;
@@ -192,4 +182,43 @@ nav ul li {
     height: 80px;
     text-align: center;
     margin-top: 4px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset > label {
+    display: initial;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+}
+
+#stormSeverityValue {
+    position: absolute;
+    top: 3px;
+    left: 115px;
+}
+
+.thankYouSection {
+    height: calc(100vh - 282px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
