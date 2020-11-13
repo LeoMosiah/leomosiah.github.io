@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: "Great Vibes", cursive;
+    color: #fff;
+    margin:0 auto;
+
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+h1 {
+    color: black;
+    font-size: 48px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+img {
+    display: block;
+    width: 55%;
+    margin: 5px auto 0 auto;
+    box-shadow: 0 0 10px 5px darkgray;
+}
+
+main {
+    padding: 15px;
+    margin: 0 auto;
+    background-color: lightgray;
+    box-shadow: 0 0 10px 5px #97979744;
+}
+
+section {
+    background-color: navy;
+    border: solid 2px rgb(35, 90, 245);
+    padding: 12px;
+}
+
+.birth, .birthplace {
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+
+footer {
+    background-color: #353E46;
+    padding: 10px;
+    text-align: center;
+    color:#ffff;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    img {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    img {
+        width: 85%;
+    }
+}
