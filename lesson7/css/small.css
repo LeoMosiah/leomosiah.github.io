@@ -26,6 +26,10 @@ header > img {
     width: 80px;
 }
 
+a {
+    text-decoration: none;
+}
+
 span {
     font-family: Helvetica,serif;
     font-size: 12px;
@@ -103,10 +107,6 @@ main {
     height: auto;
 }
 
-a {
-    text-decoration: none;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Sansita Swashed", cursive;
 }
@@ -119,14 +119,11 @@ h1 {
 
 h2 {
     color: #0A1FA8;
-}
-
-.heroImage {
-    width: 100%;
+    text-align: center;
 }
 
 section {
-    text-align: left;
+    text-align: center;
     background-color: white;
     border-radius: 4px;
     margin: 8px;
@@ -137,13 +134,6 @@ section {
     color: #0A1FA8;
 }
 
-.articleImage {
-    width: 100%;
-    height: 80px;
-    background: orangered;
-    text-align: center;
-    margin-top: 4px;
-}
 
 footer {
     display: flex;
@@ -196,4 +186,44 @@ nav ul li {
     height: 80px;
     text-align: center;
     margin-top: 4px;
+}
+
+.imageCard {
+    background-color: white;
+    text-align: left;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.imageCard > p {
+    margin: 2px 4px;
+    font-size: 24px;
+}
+
+.imageCard > picture > img {
+    width: 100%;
+}
+
+.lazyLoadGallery {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+
+img[data-src] {
+    filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+    -webkit-transition: filter 1.5s;
+    -moz-transition: filter 1.5s;
+    -o-transition: filter 1.5s;
+    -webkit-filter: blur(0em);
 }

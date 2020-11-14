@@ -1,0 +1,15 @@
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    span {
+        font-size: 24px;
+    }
+    .lazyLoadGallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .imageCard:hover {
+        box-shadow: 0 0 10px #333;
+    }
+}
