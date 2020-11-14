@@ -13,4 +13,7 @@
     #townsSection > div {
         flex-direction: column !important;
     }
+    #townsSection > div > div  > h3 {
+        font-size: 38px;
+    }
 }
