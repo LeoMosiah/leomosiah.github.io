@@ -230,7 +230,6 @@ nav ul li {
     color: #A3B0D7;
 }
 
-#townsSection > div > div  > img {
-    background-color: #228B22;
+#townsSection > div > div > picture  > img {
     width: 100%;
 }

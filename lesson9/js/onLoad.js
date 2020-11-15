@@ -14,19 +14,29 @@ function onLoad() {
                 const yearFounded = document.createElement("p")
                 const currentPopulation = document.createElement("p")
                 const averageRainfall = document.createElement("p")
+                const picture = document.createElement("picture")
+                const mediumImage = document.createElement("source")
+                const largeImage = document.createElement("source")
                 const image = document.createElement("img")
                 townName.innerText = filteredResponse[index].name
                 townsMotto.innerText = filteredResponse[index].motto
                 yearFounded.innerText = `Year Founded: ${filteredResponse[index].yearFounded}`
                 currentPopulation.innerText = `Population: ${filteredResponse[index].currentPopulation}`
                 averageRainfall.innerText = `Annual Rain Fall: ${filteredResponse[index].averageRainfall}`
-                image.src = filteredResponse[index].photo
+                image.src = "../lesson6/images/hero-small.jpg"
+                mediumImage.srcset = "../lesson6/images/hero-medium.jpg"
+                mediumImage.media = "(min-width: 768px)"
+                largeImage.srcset = "../lesson6/images/hero-large.jpg"
+                largeImage.media = "(min-width: 1024px)"
+                picture.appendChild(largeImage)
+                picture.appendChild(mediumImage)
+                picture.appendChild(image)
                 townInformation.appendChild(townName)
                 townInformation.appendChild(townsMotto)
                 townInformation.appendChild(yearFounded)
                 townInformation.appendChild(currentPopulation)
                 townInformation.appendChild(averageRainfall)
-                townImage.appendChild(image)
+                townImage.appendChild(picture)
                 townCard.appendChild(townInformation)
                 townCard.appendChild(townImage)
                 townsSection.appendChild(townCard)
