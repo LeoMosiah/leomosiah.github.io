@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    span {
+        font-size: 24px;
+    }
+}
