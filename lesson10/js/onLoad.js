@@ -28,7 +28,7 @@ function onForecast({ list }) {
         title.innerText = daysOfTheWeek[index]
         img.src = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`
         img.alt = `https://openweathermap.org/img/w/${forecast.main.temp}`
-        caption.innerText = forecast.main.temp
+        caption.innerText = `${forecast.main.temp} ℉`
         figure.appendChild(title)
         figure.appendChild(img)
         figure.appendChild(caption)
