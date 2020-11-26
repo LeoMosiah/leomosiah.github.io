@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="WDD 230: Storm Center">
+    <meta name="description"
+          content="Assignment portal for Leonardo Mosiah Janes de Souza in WDD 230. Applied Technology at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson8/css/small.css">
+    <link rel="stylesheet" href="../lesson8/css/medium.css">
+    <link rel="stylesheet" href="../lesson8/css/large.css">
+    <link rel="shortcut icon" type="image/x-icon" href="iconfinder_weather.png">
+    <script src="../lesson8/js/onLoad.js"></script>
+    <script src="../lesson8/js/onChange.js"></script>
+    <title>Don't Rain on My Parade</title>
+</head>
+
+<body onload="onLoad()">
+<div id="pancakes" class="pancakes">
+    <h3>Saturday = Preston Pancakes in the Park!</h3>
+    <p>9:00 a.m. Saturday at the city park pavilion.</p>
+</div>
+<header>
+    <img src="iconfinder_weather.png" alt="Don't Rain on My Parade Logo">
+    <div>
+        <h1>Don't Rain On My Parade</h1>
+        <span>You are never off guard</span>
+        <span class="catchPhrase">/ Some Nice Catch Phrase</span>
+    </div>
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
+    <label for="navi-toggle" class="navigation__button">
+        Menu
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+</header>
+<main>
+    <nav id="menu" class="menuClose">
+        <ul>
+            <li>
+                <a href="../lesson9/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../lesson10/preston-10.html">Preston</a>
+            </li>
+            <li class="selected">
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="../lesson7/gallery-7.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <h2>Storm Center</h2>
+    <section>
+        <h4>Weather Report</h4>
+        <form method="get" action="thanks.html">
+            <label for="fullName">
+                Full Name:
+                <input type="text" id="fullName" name="fullName" pattern="[a-zA-Z ]{5}" title="This field only accepts alpha characters with a minimum of five characters" required/>
+            </label>
+            <label for="email">
+                Email:
+                <input type="email" id="email" name="email"  placeholder="email@mail.com" required/>
+            </label>
+            <label for="phone">
+                Phone Number:
+                <input type="tel" id="phone" name="phone" required/>
+            </label>
+            <label for="zipcode">
+                Zip Code:
+                <input type="number" id="zipcode" name="zipcode" required/>
+            </label>
+            <label for="stormDate">
+                Storm Date:
+                <input type="date" id="stormDate" name="stormDate" />
+            </label>
+            <label for="stormType">
+                Storm Type:
+                <input list="storm-types" id="stormType" name="stormType" />
+                <datalist id="storm-types">
+                    <option value="Flash Flood"></option>
+                    <option value="Tornado"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                </datalist>
+            </label>
+            <label for="stormSeverity">
+                Storm Severity
+                <span id="stormSeverityValue"></span>
+                <input type="range" id="stormSeverity" name="stormDate" min="1" max="10"  step="1" oninput="onRange(this.value)"/>
+            </label>
+            <label for="stormRegion">
+                Storm Region:
+                <select id="stormRegion" name="stormRegion">
+                    <option value="" disabled selected>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                </select>
+            </label>
+            <fieldset>
+                <p>User in-danger level</p>
+                <label>
+                    Yes
+                    <input type="radio" value="yes" name="user-in-danger" />
+                </label>
+                <label >
+                    No
+                    <input type="radio"  value="no" name="user-in-danger" />
+                </label>
+                <label>
+                    Maybe
+                    <input type="radio" value="maybe" name="user-in-danger" />
+                </label>
+            </fieldset>
+            <label for="additionalInfo">
+                Additional Information:
+                <textarea id="additionalInfo"></textarea>
+            </label>
+            <input type="submit" value="Report Weather">
+        </form>
+    </section>
+</main>
+<footer>
+    <div>
+        <p>Contact Information</p>
+        <span>dontrainonmyparade@email.com</span>
+        <span>123 - 4567 - 890</span>
+        <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
+    </div>
+    <div class="map">
+        <iframe width="300" height="80" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="../lesson8/js/fontLoader.js"></script>
+<script src="../lesson8/js/onInput.js"></script>
+</body>
+
+</html>

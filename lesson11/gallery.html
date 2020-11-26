@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Lazy Loading Demo for  WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson7/css/small.css">
+    <link rel="stylesheet" href="../lesson7/css/medium.css">
+    <link rel="stylesheet" href="../lesson7/css/large.css">
+    <link rel="shortcut icon" type="image/x-icon" href="iconfinder_weather.png">
+    <script src="../lesson7/js/onChange.js"></script>
+    <script src="../lastUpdate.js"></script>
+    <title>Weather Gallery</title>
+</head>
+<body onload="lastUpdate()">
+    <div id="pancakes" class="pancakes">
+        <h3>Saturday = Preston Pancakes in the Park!</h3>
+        <p>9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img src="iconfinder_weather.png" alt="Don't Rain on My Parade Logo">
+        <div>
+            <h1>Don't Rain On My Parade</h1>
+            <span>You are never off guard</span>
+            <span class="catchPhrase">/ Some Nice Catch Phrase</span>
+        </div>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
+        <label for="navi-toggle" class="navigation__button">
+            Menu
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+    </header>
+    <main>
+        <nav id="menu" class="menuClose">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="preston.html">Preston</a>
+                </li>
+                <li>
+                    <a href="stormcenter.html">Storm Center</a>
+                </li>
+                <li class="selected">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="lazyLoadGallery">
+            <div class="imageCard">
+                <picture>
+                    <img src='../lesson7/images/placeholder.png' data-src='images/casey-horner-zjTsPbSo5m0-unsplash.jpg' alt='windy day'>
+                </picture>
+                <p>Strong windy day</p>
+            </div>
+            <div class="imageCard">
+                <picture>
+                    <img src='../lesson7/images/placeholder.png' data-src='images/craig-whitehead-SuJp8ZpkubI-unsplash.jpg' alt='Snow'>
+                </picture>
+                <p>Snow Afternoon</p>
+            </div>
+            <div class="imageCard">
+                <picture>
+                    <img src='../lesson7/images/placeholder.png' data-src='images/daniel-ramirez-q4TfWtnz_xw-unsplash.jpg' alt='Cloudy'>
+                </picture>
+                <p>Cloudy evening</p>
+            </div>
+            <div class="imageCard">
+                <picture>
+                    <img src='../lesson7/images/placeholder.png' data-src='images/joshua-sortino-XMcoTHgNcQA-unsplash.jpg' alt='Sunny'>
+                </picture>
+                <p>Sunny afternoon on the road</p>
+            </div>
+            <div class="imageCard">
+                <picture>
+                    <img src='../lesson7/images/placeholder.png' data-src='images/max-larochelle-uu-Jw5SunYI-unsplash.jpg' alt='lightning'>
+                </picture>
+                <p>Rainy night and lightning</p>
+            </div>
+            <div class="imageCard">
+                <picture>
+                    <img src='../lesson7/images/placeholder.png' data-src='images/nick-scheerbart-soGoAfesWO8-unsplash.jpg' alt='rain'>
+                </picture>
+                <p>Morning walk in the rain</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contact Information</p>
+            <span>dontrainonmyparade@email.com</span>
+            <span>123 - 4567 - 890</span>
+            <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
+        </div>
+        <div class="map">
+            <iframe width="300" height="80" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+    </footer>
+<script src="../lesson7/app.js" defer></script>
+</body>
+</html>
