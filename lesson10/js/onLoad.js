@@ -1,14 +1,92 @@
-function onLoad() {
+function onLoad(cityId) {
     const isFriday = new Date().getDay() === 5
     if (isFriday) {
         const pancakes = document.getElementById("pancakes")
         pancakes.setAttribute("style", "display: block");
     }
     document.getElementById('lastUpdated').innerHTML = `Last updated ${document.lastModified}`;
-    fetch('https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=123ae05cdd5cc4084618178c2a325bb1&units=imperial')
+    fetch(`https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=123ae05cdd5cc4084618178c2a325bb1&units=imperial`)
         .then(response => response.json()).then(onWeather)
-    fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=123ae05cdd5cc4084618178c2a325bb1&units=imperial')
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=123ae05cdd5cc4084618178c2a325bb1&units=imperial`)
         .then(response => response.json()).then(onForecast)
+    window.fetch('https://byui-cit230.github.io/weather/data/towndata.json').then(res => res.json())
+        .then((response) => {
+            const { towns } = response
+            const main = document.getElementById("main")
+            const filteredResponse = towns.filter(elem => elem.name === "Fish Haven" || elem.name === "Preston" || elem.name === "Soda Springs")
+            if (cityId === '5604473') {
+                const [preston] = filteredResponse.filter(elem => elem.name === "Preston")
+                const { events } = preston
+                for (const index in events) {
+                    const eventSection = document.createElement('section')
+                    const eventTitle = document.createElement('h4')
+                    const eventInformation = document.createElement('div')
+                    const eventImage = document.createElement('img')
+                    const eventDescription = document.createElement("p")
+                    const eventDate = document.createElement("span")
+                    const [date, title] = events[index].split(":")
+                    eventTitle.innerText = title
+                    eventDate.innerText = date
+                    eventImage.className = "articleImage"
+                    eventImage.src = "../lesson6/images/hero-small.jpg"
+                    eventDescription.innerText = "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum"
+                    eventInformation.appendChild(eventImage)
+                    eventInformation.appendChild(eventDescription)
+                    eventSection.appendChild(eventTitle)
+                    eventSection.appendChild(eventDate)
+                    eventSection.appendChild(eventInformation)
+                    main.appendChild(eventSection)
+                }
+            }
+            if (cityId === '5607916') {
+                const [sodaSprings] = filteredResponse.filter(elem => elem.name === "Soda Springs")
+                const { events } = sodaSprings
+                for (const index in events) {
+                    const eventSection = document.createElement('section')
+                    const eventTitle = document.createElement('h4')
+                    const eventInformation = document.createElement('div')
+                    const eventImage = document.createElement('img')
+                    const eventDescription = document.createElement("p")
+                    const eventDate = document.createElement("span")
+                    const [date, title] = events[index].split(":")
+                    eventTitle.innerText = title
+                    eventDate.innerText = date
+                    eventImage.className = "articleImage"
+                    eventImage.src = "../lesson6/images/hero-small.jpg"
+                    eventDescription.innerText = "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum"
+                    eventInformation.appendChild(eventImage)
+                    eventInformation.appendChild(eventDescription)
+                    eventSection.appendChild(eventTitle)
+                    eventSection.appendChild(eventDate)
+                    eventSection.appendChild(eventInformation)
+                    main.appendChild(eventSection)
+                }
+            }
+            if (cityId === '5585010') {
+                const [fishHaven] = filteredResponse.filter(elem => elem.name === "Fish Haven")
+                const { events } = fishHaven
+                for (const index in events) {
+                    const eventSection = document.createElement('section')
+                    const eventTitle = document.createElement('h4')
+                    const eventInformation = document.createElement('div')
+                    const eventImage = document.createElement('img')
+                    const eventDescription = document.createElement("p")
+                    const eventDate = document.createElement("span")
+                    const [date, title] = events[index].split(":")
+                    eventTitle.innerText = title
+                    eventDate.innerText = date
+                    eventImage.className = "articleImage"
+                    eventImage.src = "../lesson6/images/hero-small.jpg"
+                    eventDescription.innerText = "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum"
+                    eventInformation.appendChild(eventImage)
+                    eventInformation.appendChild(eventDescription)
+                    eventSection.appendChild(eventTitle)
+                    eventSection.appendChild(eventDate)
+                    eventSection.appendChild(eventInformation)
+                    main.appendChild(eventSection)
+                }
+            }
+        })
 }
 
 function onForecast({ list }) {

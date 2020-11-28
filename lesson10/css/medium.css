@@ -72,6 +72,10 @@ header > img {
 
     section > div {
         display: flex;
+        flex-direction: row-reverse;
+    }
+    #forecast {
+        flex-direction: row !important;
     }
     .articleImage {
         width: 40%;
