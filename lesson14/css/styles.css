@@ -272,6 +272,21 @@ legend {
     padding: 12px;
 }
 
+.tours {
+    margin: 12px;
+}
+
+.tour-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    margin: 8px 0;
+}
+
+.tour-card > div:last-child {
+    padding: 12px;
+}
+
 @media (min-width: 768px) {
     h1 {
         font-size: 42px;
@@ -310,5 +325,14 @@ legend {
     }
     #rentals > div > div:last-child > div:first-child {
         margin-bottom: 30px;
+    }
+    .tour-card {
+        flex-direction: row-reverse;
+    }
+    .tour-card:nth-child(odd) {
+        flex-direction: row;
+    }
+    .tour-card > div {
+        width: 50%;
     }
 }
