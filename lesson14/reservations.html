@@ -43,7 +43,114 @@
             </li>
         </ul>
     </nav>
-    <section id="rentals"></section>
+    <form class="reservation-form" action="confirmation.html" method="GET">
+        <fieldset>
+            <legend>Rental Agreement</legend>
+                <p class="formTitle">
+                    A $50 security deposit is required to confirm reservations.
+                </p>
+                <p class="formTitle">
+                    A valid drivers license is required in hand at time of rental.
+                </p>
+                <p class="formTitle">
+                    No one under 12 years of age are allowed to ride on the scooters.
+                </p>
+                <p class="formTitle">
+                    Fuel charge not included.
+                </p>
+                <p class="formTitle">
+                    Unlimited mileage.
+                </p>
+                <p class="formTitle">
+                    Liability insurance is free of charge.
+                </p>
+                <p class="formTitle">
+                    Reservations rate requires 24 hour prior notification.
+                </p>
+                <p class="formTitle">
+                    Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                </p>
+                <p class="formTitle">
+                    Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                </p>
+                <p class="formTitle">
+                    Rentals may be returned to either location.
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>Guest Information</legend>
+            <label for="fName">First Name:
+                <input type="text" name="fName" id="fName" pattern="[A-Za-z]{3,}" required>
+            </label>
+            <label for="lName">Last Name:
+                <input type="text" name="lName" id="lName" pattern="[A-Za-z]{2,}" required>
+            </label>
+            <label for="country">Coutry of residence:
+                <input type="text" name="country" id="country" required>
+            </label>
+            <label for="email">Email:
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="phone">Phone Number:
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required>
+            </label>
+            <label for="cruise">Cruise line:
+                <input type="text" name="cruise" id="cruise" placeholder="Input cruise line (optional)">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Rental Information</legend>
+            <label for="rStart">Beggining rental date:
+                <input type="date" name="rStart" id="rStart" required>
+            </label>
+            <label for="rEnd">Ending rental date:
+                <input type="date" name="rEnd" id="rEnd" required>
+            </label>
+            <label for="totalPassengers">Number of passengers:
+                <input type="number" max="12" name="totalPassengers" id="totalPassengers" placeholder="Maximum 12" required>
+            </label>
+            <div class="radio-container">
+                <p class="formTitle">Rental type:</p>
+                <label for="rentalF">
+                    <input type="radio" name="rental" id="rentalF" value="Full-day">Full-day
+                </label>
+                <label for="rentalH">
+                    <input type="radio" name="rental" id="rentalH" value="Half-day">Half-day
+                </label>
+            </div>
+            <label for="vehicleType">Type of Vehicle(s):</label>
+            <select name="vehicleType" id="vehicleType" required>
+                <option value="">Choose a vehicle type:</option>
+            </select>
+            <label for="vehicleAmount">Amount of vehicles to reserve:</label>
+            <select name="vehicleAmount" id="vehicleAmount" required>
+                <option value="">Choose the amount of vehicles:</option>
+                <option value="1">1 vehicle</option>
+                <option value="2">2 vehicles</option>
+                <option value="3">3 vehicles</option>
+                <option value="4">4 vehicles</option>
+                <option value="4">4 vehicles</option>
+                <option value="5">5 vehicles</option>
+            </select>
+            <div class="radio-container">
+                <p class="formTitle">Would you like your vehicle dropped off somewhere?</p>
+                <label for="dropoffY">
+                    <input type="radio" name="dropoff" id="dropoffY" value="Yes">Yes
+                </label>
+                <label for="dropoffN">
+                    <input type="radio" name="dropoff" id="dropoffN" value="No">No
+                </label>
+            </div>
+            <label for="dropLoc">If yes, specify dropoff location.
+                <input type="text" name="dropLoc" id="dropLoc">
+            </label>
+            <label for="rentalComments">Extra information:
+            </label>
+            <textarea name="rentalComments" id="rentalComments" cols="30" rows="10"
+                      placeholder="Please leave any comments or extra information here:"></textarea>
+        </fieldset>
+        <input class="submitButton" type="submit" value="Confirm Reservation" >
+    </form>
 </main>
 <footer>
     <div>

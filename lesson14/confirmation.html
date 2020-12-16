@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Scoots provides quality rental vehicles to tourist and locals. We serve those in Cozumel and Playa del Carmen. Visit our site to learn how you can get the most from your trip with our services.">
+    <title>Scoots | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/lastUpdate.js" defer ></script>
+    <script src="./js/onChange.js" defer ></script>
+</head>
+
+<body onload="lastUpdate()">
+<header>
+    <div>
+        <h3>Scoots</h3>
+        <span class="catchPhrase">Get there fast anywhere</span>
+    </div>
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+</header>
+<main style="height: 100%">
+    <nav id="menu" class="menuClose">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="rentals.html">Rentals</a>
+            </li>
+            <li>
+                <a href="reservations.html">Reservations</a>
+            </li>
+            <li class="selected">
+                <a href="tours.html">Tours</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section style="margin: 0 auto; text-align: center; padding: 32px">
+        <h1>Congratulations</h1>
+        <p>Your reservation has been successfully confirmed</p>
+    </section>
+</main>
+<footer>
+    <div>
+        <a href="https://byui.instructure.com/">
+            <img src="./images/ilearn.ico" alt="i-lear icon" />
+        </a>
+        <a href="https://www.byupathway.org/" >
+            <img src="./images/pathwayIcon.png" alt="pathway icon" />
+        </a>
+    </div>
+    <div>
+        <p>Contact</p>
+        <p>Phone: 123-456-789</p>
+        <p>Email: info@scootes.com</p>
+    </div>
+    <div>
+        <p>&copy; <span id="year">2020</span> | Leonardo Mosiah Janes de Souza | Brazil | <a class="footer-link" href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/fontLoader.js"></script>
+</body>
+
+</html>

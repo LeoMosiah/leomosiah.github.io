@@ -1,6 +1,7 @@
 *, *:before, *:after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
 :root {
@@ -12,7 +13,11 @@
 
 html,
 body {
+    width: 100%;
     height: 100%;
+}
+body {
+    box-sizing: border-box;
 }
 
 img {
@@ -39,6 +44,20 @@ h3 {
 p {
     color: var(--color-primary-light);
     font-size: 18px;
+}
+
+.selected {
+    color: var(--color-secondary);
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+ul {
+    list-style: none;
 }
 
 header {
@@ -193,35 +212,65 @@ figure {
     justify-content: center;
 }
 
+legend {
+    margin: 8px;
+}
+
 .rental-general-info {
     margin-top: 10px;
     padding: 8px;
 }
 
-#rentals {
-    height: 100%;
+#rentals > div {
+    margin: 12px 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
 }
 
+#rentals > div > div > a {
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 4px;
+}
 
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    background-color: var(--color-secondary);
+    padding: 12px;
+}
 
+.reservation-form > fieldset  {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
 
+.reservation-form > fieldset > label {
+    margin-right: 12px;
+}
 
+.formTitle {
+    color: black;
+}
 
+.radio-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.submitButton {
+    margin: 12px 0;
+    padding: 12px;
+}
 
 @media (min-width: 768px) {
     h1 {
@@ -241,8 +290,25 @@ figure {
     .menuClose {
         display: block;
     }
-    section > div {
+    ul {
         display: flex;
-        flex-direction: row-reverse;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 12px;
+    }
+    #rentals > div {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #rentals > div > div:last-child {
+        align-self: center;
+    }
+    #rentals > div > div:last-child {
+        margin-left: 30px;
+    }
+    #rentals > div > div:last-child > div:first-child {
+        margin-bottom: 30px;
     }
 }
