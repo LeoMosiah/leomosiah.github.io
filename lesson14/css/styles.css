@@ -213,7 +213,7 @@ figure {
 }
 
 legend {
-    margin: 8px;
+    padding: 4px;
 }
 
 .rental-general-info {
@@ -285,6 +285,32 @@ legend {
 
 .tour-card > div:last-child {
     padding: 12px;
+}
+
+.contact-container {
+    margin: 12px;
+    padding: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.contact-form > label {
+    display: flex;
+    margin-right: 8px;
+}
+.contact-form > button {
+    margin: 8px 0;
+}
+
+.maps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (min-width: 768px) {
