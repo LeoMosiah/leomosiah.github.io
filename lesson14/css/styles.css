@@ -1,0 +1,248 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #507DBC;
+    --color-primary-light: #A1C6EA;
+    --color-secondary: #BBD1EA;
+    --color-secondary-light: #DAE3E5;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Josefin Slab", sans-serif;
+    font-size: 48px;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-family: "Josefin Slab", sans-serif;
+    font-size: 38px;
+    color: var(--color-primary);
+}
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-primary-light);
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 4px;
+    height: 90px;
+}
+
+header > img {
+    height: 80px;
+    width: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__button{
+    background-color: transparent;
+    color: #A3B0D7;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation__icon {
+    margin-top: 35px;
+    position: relative;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    width: 30px;
+    height: 2px;
+    background-color: #435EC2;
+    display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+}
+.navigation__icon::before {
+    top: -8px;
+}
+.navigation__icon::after {
+    top: 8px;
+}
+.navigation__button:hover .navigation__icon::before {
+    top: -10px;
+}
+.navigation__button:hover .navigation__icon::after {
+    top: 10px;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before  {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after  {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+.menuClose {
+    display: none;
+}
+
+.hero-image-section {
+    position: relative;
+    margin-top: 10px;
+}
+
+.hero-image-section button {
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 4px;
+}
+
+footer div:nth-child(2) {
+    align-self: flex-start;
+}
+
+footer div a img {
+    height: 36px;
+    width: 36px;
+    margin-left: 38px;
+}
+
+footer > div > p {
+    color: white;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#weather {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rental-general-info {
+    margin-top: 10px;
+    padding: 8px;
+}
+
+#rentals {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    .catchPhrase {
+        display: inline;
+    }
+    .navigation__button {
+        display: none;
+    }
+    .menuClose {
+        display: block;
+    }
+    section > div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,91 @@
+{
+  "options": [{
+    "rentalType": "Honda Metro Scooter",
+    "maxPersons": 1,
+    "imgSrc": "images/jpg/metro_scooter.jpg",
+    "reservation": {
+      "half": 20,
+      "full": 30
+    },
+    "walk_in": {
+      "half": 25,
+      "full": 35
+    }
+  },
+    {
+      "rentalType": "Honda Dio Scooter",
+      "maxPersons": 2,
+      "imgSrc": "images/jpg/dio_scooter.jpg",
+      "reservation": {
+        "half": 30,
+        "full": 40
+      },
+      "walk_in": {
+        "half": 35,
+        "full": 45
+      }
+    },
+    {
+      "rentalType": "Honda PCX150 Scooter",
+      "maxPersons": 2,
+      "imgSrc": "images/jpg/pcx150_scooter.jpg",
+      "reservation": {
+        "half": 40,
+        "full": 50
+      },
+      "walk_in": {
+        "half": 45,
+        "full": 55
+      }
+    },
+    {
+      "rentalType": "Honda Pioneer ATV",
+      "maxPersons": 4,
+      "imgSrc": "images/jpg/atv.jpg",
+      "reservation": {
+        "half": 50,
+        "full": 70
+      },
+      "walk_in": {
+        "half": 60,
+        "full": 80
+      }
+    },
+    {
+      "rentalType": "Jeep Wrangler - 2 door",
+      "maxPersons": 4,
+      "imgSrc": "images/jpg/jeep_2door.jpg",
+      "reservation": {
+        "half": 60,
+        "full": 85
+      },
+      "walk_in": {
+        "half": 70,
+        "full": 90
+      }
+    },
+    {
+      "rentalType": "Jeep Wrangler - 4 door with a/c",
+      "maxPersons": 5,
+      "imgSrc": "images/jpg/jeep_4door.jpg",
+      "reservation": {
+        "half": 70,
+        "full": 100
+      },
+      "walk_in": {
+        "half": 85,
+        "full": 125
+      }
+    }
+  ],
+  "rentalTypes": [{
+    "honda": ["Honda Metropolitan (49cc) - 1 person",
+      "Honda Dio (110cc) - 2 person",
+      "Honda PCX150 (149cc) - 2 person"
+    ],
+    "atv_sbs": ["Honda Pioneer 1000"],
+    "jeep": ["4-door Jeep Wrangler - manual with A/C - 5 people max",
+      "2-door Jeep Wrangler - open air - manual - 4 people max"
+    ]
+  }]
+}
