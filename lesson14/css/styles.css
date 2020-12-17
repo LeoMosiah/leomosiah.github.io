@@ -318,6 +318,15 @@ legend {
         font-size: 42px;
     }
 
+    footer {
+        flex-direction: row;
+    }
+    header {
+        justify-content: flex-start;
+    }
+    header > img {
+        margin-right: 24px;
+    }
     span {
         font-size: 18px;
     }
