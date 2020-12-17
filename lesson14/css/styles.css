@@ -78,6 +78,22 @@ a {
     text-decoration: none;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-light);
+}
+
+ul > li {
+    padding: 8px;
+    margin: 8px;
+    background-color: var(--color-secondary-light);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 .navigation__checkbox {
     display: none;
 }
@@ -341,11 +357,11 @@ legend {
         display: block;
     }
     ul {
-        display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
         padding: 12px;
+        flex-direction: row;
     }
     #rentals > div {
         flex-direction: row;

@@ -11,7 +11,7 @@ function onRentals({ options }) {
                 <div>
                     <h2>${option.rentalType}</h2>
                 </div>
-                <img src="./images/hero-image-small.jpg" alt="Image">
+                <img style="max-height: 380px" src=${option.imgSrc} alt="Image">
             </div>
             <div>
                 <div>

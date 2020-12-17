@@ -2,7 +2,7 @@
   "options": [{
     "rentalType": "Honda Metro Scooter",
     "maxPersons": 1,
-    "imgSrc": "images/jpg/metro_scooter.jpg",
+    "imgSrc": "https://images.unsplash.com/photo-1503434396599-58ba8a18d932?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "reservation": {
       "half": 20,
       "full": 30
@@ -15,7 +15,7 @@
     {
       "rentalType": "Honda Dio Scooter",
       "maxPersons": 2,
-      "imgSrc": "images/jpg/dio_scooter.jpg",
+      "imgSrc": "https://images.unsplash.com/photo-1519750292352-c9fc17322ed7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c2Nvb3RlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       "reservation": {
         "half": 30,
         "full": 40
@@ -28,7 +28,7 @@
     {
       "rentalType": "Honda PCX150 Scooter",
       "maxPersons": 2,
-      "imgSrc": "images/jpg/pcx150_scooter.jpg",
+      "imgSrc": "https://images.unsplash.com/photo-1597260491651-ee327fc487b1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHNjb290ZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
       "reservation": {
         "half": 40,
         "full": 50
@@ -41,7 +41,7 @@
     {
       "rentalType": "Honda Pioneer ATV",
       "maxPersons": 4,
-      "imgSrc": "images/jpg/atv.jpg",
+      "imgSrc": "https://images.unsplash.com/photo-1600718992446-f89dbb53bdfe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNjb290ZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
       "reservation": {
         "half": 50,
         "full": 70
@@ -54,7 +54,7 @@
     {
       "rentalType": "Jeep Wrangler - 2 door",
       "maxPersons": 4,
-      "imgSrc": "images/jpg/jeep_2door.jpg",
+      "imgSrc": "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8amVlcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       "reservation": {
         "half": 60,
         "full": 85
@@ -67,7 +67,7 @@
     {
       "rentalType": "Jeep Wrangler - 4 door with a/c",
       "maxPersons": 5,
-      "imgSrc": "images/jpg/jeep_4door.jpg",
+      "imgSrc": "https://images.unsplash.com/photo-1520906732593-2c0392183185?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8amVlcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       "reservation": {
         "half": 70,
         "full": 100
