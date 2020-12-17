@@ -94,6 +94,11 @@ ul > li {
     cursor: pointer;
 }
 
+fieldset {
+    border: 2px solid var(--color-secondary-light);
+    border-radius: 6px;
+}
+
 .navigation__checkbox {
     display: none;
 }
@@ -385,5 +390,8 @@ legend {
     }
     .tour-card > div {
         width: 50%;
+    }
+    .maps-container {
+        flex-direction: row;
     }
 }
