@@ -7,12 +7,12 @@
     <meta name="title" content="WDD 230: Assignment Portal">
     <meta name="description"
           content="Assignment portal for Leonardo Mosiah Janes de Souza in WDD 230. Applied Technology at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" type="image/x-icon" href="iconfinder_weather.png">
-    <script src="./js/onChange.js"></script>
-    <script src="./js/onLoad.js"></script>
+    <script src="js/onChange.js"></script>
+    <script src="js/onLoad.js"></script>
     <title>Don't Rain on My Parade</title>
 </head>
 
@@ -41,7 +41,7 @@
                 <a href="../lesson9/index.html">Home</a>
             </li>
             <li class="selected">
-                <a href="preston-6.html">Preston</a>
+                <a href="preston-10.html">Preston</a>
             </li>
             <li>
                 <a href="../lesson8/stormcenter.html">Storm Center</a>
@@ -54,21 +54,22 @@
     <h2>Preston Idaho</h2>
     <div class="heroImageWrapper">
         <picture>
-            <source media="(min-width: 1024px)" srcset="./images/hero-large.jpg">
-            <source media="(min-width: 768px)" srcset="./images/hero-medium.jpg">
-            <img class="heroImage" src="./images/hero-small.jpg" alt="Rainy Day">
+            <source media="(min-width: 1024px)" srcset="images/hero-large.jpg">
+            <source media="(min-width: 768px)" srcset="images/hero-medium.jpg">
+            <img class="heroImage" src="images/hero-small.jpg" alt="Rainy Day">
         </picture>
         <section>
             <h4>Weather Summary</h4>
-            <p>Temperature: <span id="temperature">97</span>℉</p>
-            <p>Wind speed: <span id="windSpeed">14</span> MPH</p>
-            <p>Wind Chill: <span id="windchill">N/A</span></p>
-            <p>Precipitation: <span>61</span>%</p>
-            <p>Traffic: Mild. Average delay of 20 - 30 minutes.</p>
+            <p>Currently: <span id="description"></span></p>
+            <p>High: <span id="temp_max"></span>℉</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind speed: <span id="speed"></span> MPH</p>
         </section>
     </div>
     <section>
         <h4>Five Days Forecast</h4>
+        <div id="forecast"></div>
     </section>
     <section>
         <h4>Article Title</h4>
@@ -92,8 +93,7 @@
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="./js/fontLoader.js"></script>
-<script src="./js/windchill.js"></script>
+<script src="js/fontLoader.js"></script>
 </body>
 
 </html>

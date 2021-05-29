@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="WDD 230: Assignment Portal">
+    <meta name="title" content="WDD 230: Storm Center">
     <meta name="description"
           content="Assignment portal for Leonardo Mosiah Janes de Souza in WDD 230. Applied Technology at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" type="image/x-icon" href="iconfinder_weather.png">
-    <script src="./js/onChange.js"></script>
-    <script src="./js/onLoad.js"></script>
+    <script src="js/onLoad.js"></script>
     <title>Don't Rain on My Parade</title>
 </head>
 
@@ -24,12 +23,13 @@
 <header>
     <img src="iconfinder_weather.png" alt="Don't Rain on My Parade Logo">
     <div>
-        <h3>Don't Rain On My Parade</h3>
+        <h1>Don't Rain On My Parade</h1>
         <span>You are never off guard</span>
         <span class="catchPhrase">/ Some Nice Catch Phrase</span>
     </div>
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
     <label for="navi-toggle" class="navigation__button">
+        Menu
         <span class="navigation__icon">&nbsp;</span>
     </label>
 </header>
@@ -39,7 +39,7 @@
             <li>
                 Home
             </li>
-            <li class="selected">
+            <li>
                 Preston
             </li>
             <li>
@@ -48,7 +48,7 @@
             <li>
                 Fish Haven
             </li>
-            <li>
+            <li class="selected">
                 Storm Center
             </li>
             <li>
@@ -56,28 +56,10 @@
             </li>
         </ul>
     </nav>
-    <h2>Preston Idaho</h2>
-    <div class="heroImageWrapper">
-        <img class="heroImage" src="images/john-noonan-unsplash.jpg" alt="Rainy Day">
-        <section>
-            <p>Weather Summary</p>
-            <p>Temperature: 97℉</p>
-            <p>Wind speed: 14 MPH</p>
-            <p>Precipitation: 61%</p>
-            <p>Traffic: Mild. Average delay of 20 - 30 minutes.</p>
-        </section>
-    </div>
-    <section>
-        <p>Five Days Forecast</p>
-    </section>
-    <section>
-        <p>Article Title</p>
-        <div>
-            <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum</p>
-            <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum</p>
-            <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum</p>
-            <div class="articleImage"></div>
-        </div>
+    <section class="thankYouSection">
+        <h3>Thank You</h3>
+        <p>Your report has been recorded successfully!</p>
+        <p>We appreciate your willingness to help our website continue to provide reliable information to our users</p>
     </section>
 </main>
 <footer>
@@ -85,11 +67,14 @@
         <p>Contact Information</p>
         <span>dontrainonmyparade@email.com</span>
         <span>123 - 4567 - 890</span>
+        <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
     </div>
     <div class="map">
-        <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe width="300" height="80" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/fontLoader.js"></script>
 </body>
 
 </html>

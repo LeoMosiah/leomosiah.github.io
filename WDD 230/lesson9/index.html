@@ -7,11 +7,12 @@
     <meta name="title" content="WDD 230: Storm Center">
     <meta name="description"
           content="Assignment portal for Leonardo Mosiah Janes de Souza in WDD 230. Applied Technology at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" type="image/x-icon" href="iconfinder_weather.png">
-    <script src="./js/onLoad.js"></script>
+    <script src="js/onLoad.js"></script>
+    <script src="js/onChange.js"></script>
     <title>Don't Rain on My Parade</title>
 </head>
 
@@ -36,30 +37,27 @@
 <main>
     <nav id="menu" class="menuClose">
         <ul>
-            <li>
-                Home
-            </li>
-            <li>
-                Preston
-            </li>
-            <li>
-                Soda Springs
-            </li>
-            <li>
-                Fish Haven
-            </li>
             <li class="selected">
-                Storm Center
+                <a href="index.html">Home</a>
             </li>
             <li>
-                Gallery
+                <a href="../lesson10/preston-10.html">Preston</a>
+            </li>
+            <li>
+                <a href="../lesson8/stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="../lesson7/gallery-7.html">Gallery</a>
             </li>
         </ul>
     </nav>
-    <section class="thankYouSection">
-        <h3>Thank You</h3>
-        <p>Your report has been recorded successfully!</p>
-        <p>We appreciate your willingness to help our website continue to provide reliable information to our users</p>
+    <section class="homeArticle">
+        <h4>Article</h4>
+        <p>
+            Aliquam vitae velit sit amet enim vehicula rutrum. Maecenas tristique vel justo sit amet ornare. Nullam congue, ex ac maximus efficitur, lectus enim luctus dolor, ac varius leo lectus vitae urna. Sed pretium dapibus ligula, ut dictum augue malesuada vel. Donec maximus tortor orci, sed vehicula neque volutpat sit amet. Nam nec scelerisque lacus. Ut sit amet viverra quam, sed auctor velit. Nam lacus arcu, aliquam vel volutpat molestie, egestas non nibh. Mauris sodales ultrices quam vitae porta.
+        </p>
+    </section>
+    <section id="townsSection">
     </section>
 </main>
 <footer>
@@ -68,13 +66,17 @@
         <span>dontrainonmyparade@email.com</span>
         <span>123 - 4567 - 890</span>
         <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
+        <p>
+            <a href="wireframe.html" target="_blank" rel="noreferrer nofollow">WireFrame</a>
+        </p>
     </div>
     <div class="map">
         <iframe width="300" height="80" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="./js/fontLoader.js"></script>
+<script src="js/fontLoader.js"></script>
+<script src="js/onInput.js"></script>
 </body>
 
 </html>

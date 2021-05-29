@@ -7,12 +7,12 @@
     <meta name="title" content="WDD 230: Assignment Portal">
     <meta name="description"
           content="Assignment portal for Leonardo Mosiah Janes de Souza in WDD 230. Applied Technology at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" type="image/x-icon" href="iconfinder_weather.png">
-    <script src="./js/onChange.js"></script>
-    <script src="./js/onLoad.js"></script>
+    <script src="js/onChange.js"></script>
+    <script src="js/onLoad.js"></script>
     <title>Don't Rain on My Parade</title>
 </head>
 
@@ -24,13 +24,12 @@
 <header>
     <img src="iconfinder_weather.png" alt="Don't Rain on My Parade Logo">
     <div>
-        <h1>Don't Rain On My Parade</h1>
+        <h3>Don't Rain On My Parade</h3>
         <span>You are never off guard</span>
         <span class="catchPhrase">/ Some Nice Catch Phrase</span>
     </div>
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
     <label for="navi-toggle" class="navigation__button">
-        Menu
         <span class="navigation__icon">&nbsp;</span>
     </label>
 </header>
@@ -38,41 +37,41 @@
     <nav id="menu" class="menuClose">
         <ul>
             <li>
-                <a href="../lesson9/index.html">Home</a>
+                Home
             </li>
             <li class="selected">
-                <a href="preston-10.html">Preston</a>
+                Preston
             </li>
             <li>
-                <a href="../lesson8/stormcenter.html">Storm Center</a>
+                Soda Springs
             </li>
             <li>
-                <a href="../lesson7/gallery-7.html">Gallery</a>
+                Fish Haven
+            </li>
+            <li>
+                Storm Center
+            </li>
+            <li>
+                Gallery
             </li>
         </ul>
     </nav>
     <h2>Preston Idaho</h2>
     <div class="heroImageWrapper">
-        <picture>
-            <source media="(min-width: 1024px)" srcset="./images/hero-large.jpg">
-            <source media="(min-width: 768px)" srcset="./images/hero-medium.jpg">
-            <img class="heroImage" src="./images/hero-small.jpg" alt="Rainy Day">
-        </picture>
+        <img class="heroImage" src="images/john-noonan-unsplash.jpg" alt="Rainy Day">
         <section>
-            <h4>Weather Summary</h4>
-            <p>Currently: <span id="description"></span></p>
-            <p>High: <span id="temp_max"></span>℉</p>
-            <p>Wind Chill: <span id="windchill"></span></p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind speed: <span id="speed"></span> MPH</p>
+            <p>Weather Summary</p>
+            <p>Temperature: 97℉</p>
+            <p>Wind speed: 14 MPH</p>
+            <p>Precipitation: 61%</p>
+            <p>Traffic: Mild. Average delay of 20 - 30 minutes.</p>
         </section>
     </div>
     <section>
-        <h4>Five Days Forecast</h4>
-        <div id="forecast"></div>
+        <p>Five Days Forecast</p>
     </section>
     <section>
-        <h4>Article Title</h4>
+        <p>Article Title</p>
         <div>
             <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum</p>
             <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum</p>
@@ -86,14 +85,11 @@
         <p>Contact Information</p>
         <span>dontrainonmyparade@email.com</span>
         <span>123 - 4567 - 890</span>
-        <p id="lastUpdated">Last Updated: dd/mm/yyyy hh:mm:ss</p>
     </div>
     <div class="map">
-        <iframe width="300" height="80" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="./js/fontLoader.js"></script>
 </body>
 
 </html>
